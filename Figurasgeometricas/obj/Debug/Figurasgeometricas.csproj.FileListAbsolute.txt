@@ -1,0 +1,5 @@
+C:\Users\Licenciaturas\Downloads\Figurasgeometricas\obj\Debug\Figurasgeometricas.csproj.AssemblyReference.cache
+C:\Users\Licenciaturas\Downloads\Figurasgeometricas\obj\Debug\Figurasgeometricas.Form1.resources
+C:\Users\Licenciaturas\Downloads\Figurasgeometricas\obj\Debug\Figurasgeometricas.Properties.Resources.resources
+C:\Users\Licenciaturas\Downloads\Figurasgeometricas\obj\Debug\Figurasgeometricas.csproj.GenerateResource.cache
+C:\Users\Licenciaturas\Downloads\Figurasgeometricas\obj\Debug\Figurasgeometricas.csproj.CoreCompileInputs.cache
