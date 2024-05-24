@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +16,7 @@ namespace Figurasgeometricas
         //Sobreescribir el comportamiento
         public override float area()
         {
-            return (Lado1 * Lado1)*6;
+            return (float)Math.Pow(Lado1,2)*6;
         }
         public override float perimetro()
         {
@@ -24,7 +24,7 @@ namespace Figurasgeometricas
         }
         public override float volumen()
         {
-            return (Lado1 * Lado1 * Lado1);
+            return (float)Math.Pow(Lado1,3);
         }
     }
 }
