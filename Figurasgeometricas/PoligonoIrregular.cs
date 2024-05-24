@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Figurasgeometricas
 {
+    /*Se definió a la clase Polígono Irregular como una clase abstracta, heredó de figura los métodos de área, perímetro y volumen.
+Se añadió la propiedad Lado1 para representar el lado del polígono, y su valor se inicializa a través del constructor de la clase.
+
+En las clases que surgen del PolígonoIrregular (es decir Rombo y Paralelogramo), se usa el constructor base ":base(lado1)" para poder inicializar la propiedad de lado1 que anteriormente fue definida en PolígonoIrregular.
+Esto permite que lado1 inicie de manera correcta antes que lo que se ha programado para los casos de Rombo y Paralelogramo.
+
+La palabra clave base se usa para acceder a los miembros de la clase base desde una clase derivada. Se usa para especificar a qué constructor de clase base se debe llamar cuando se crean instancias de la clase derivada.*/
     abstract class PoligonoIrregular : Figura
     {
         public PoligonoIrregular(float lado1)
