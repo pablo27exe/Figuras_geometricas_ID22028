@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +25,8 @@ namespace Figurasgeometricas
         }
         public override float volumen()
         {
-            return ((4 * 3.1426F) * (Lado1 * Lado1 * Lado1)) / 3;
+            return ((4 * 3.1426F) * (float)Math.Pow(Lado1,3)) / 3;
         }
     }
 }
+
