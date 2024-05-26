@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Figurasgeometricas
 {
-    /*Se definió a la clase Polígono Irregular como una clase abstracta, heredó de figura los métodos de área, perímetro y volumen.
+/*Se definió a la clase Polígono Irregular como una clase abstracta, heredó de figura los métodos de área, perímetro y volumen.
 Se añadió la propiedad Lado1 para representar el lado del polígono, y su valor se inicializa a través del constructor de la clase.
 
 En las clases que surgen del PolígonoIrregular (es decir Rombo y Paralelogramo), se usa el constructor base ":base(lado1)" para poder inicializar la propiedad de lado1 que anteriormente fue definida en PolígonoIrregular.
@@ -17,7 +17,7 @@ La palabra clave base se usa para acceder a los miembros de la clase base desde 
     {
         public PoligonoIrregular(float lado1)
         {//El radio se lee de la caja de texto con el boton de guardar
-            this.Lado1 = lado1;//Hace que el valor del lado sea dispoible uncamente para rectangulo, en otro caso será igual a 0
+            this.Lado1 = lado1;//Hace que el valor del lado sea dispoible unicamente para rectangulo, en otro caso será igual a 0
         }
         //Uso de los metods de la clase padre
         //Sobreescribir el comportamiento
@@ -34,7 +34,7 @@ La palabra clave base se usa para acceder a los miembros de la clase base desde 
             throw new NotImplementedException();//Caso de excepción debido a que el poligono no necesita calcular volumen
         }
 
-        class Rombo : PoligonoIrregular
+        public class Rombo : PoligonoIrregular
         {
             private float diagonalMayor;
             private float diagonalMenor;
@@ -80,9 +80,9 @@ La palabra clave base se usa para acceder a los miembros de la clase base desde 
             public Rombo(float lado1, float diagonalMayor, float diagonalMenor)
             : base(lado1)  // Llama al constructor de PoligonoIrregular para inicializar Lado1
             {
+                this.Lado1 = lado1;
                 this.DiagonalMayor = diagonalMayor;
                 this.DiagonalMenor = diagonalMenor;
-                this.Lado1 = lado1;
             }
 
             public override float area()
@@ -165,4 +165,3 @@ La palabra clave base se usa para acceder a los miembros de la clase base desde 
         }
     }
 }
-
